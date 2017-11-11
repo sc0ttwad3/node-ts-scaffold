@@ -1,6 +1,6 @@
 /**
 * Module dependencies.  
 */
-import * as chalk from "chalk"
+import chalk from "chalk";
 
-console.log(chalk.blue("index file start...");
+console.log(chalk.blue("index file start..."));
