@@ -1,0 +1,21 @@
+{
+  "name": "ts-scaffold",
+  "version": "0.1.0",
+  "description": "Node project scaffold",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint --project . --type-check src/**/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.51",
+    "trash": "^4.1.0",
+    "tslint": "^5.0.0-dev.0",
+    "typescript": "^2.7.0-dev.20171111"
+  }
+}
