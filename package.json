@@ -4,10 +4,10 @@
   "description": "Node project scaffold",
   "main": "index.js",
   "scripts": {
-    "build": "trash build && tsc -p tsconfig.json",
+    "build": "./node_modules/.bin/trash build && tsc -p tsconfig.json",
     "lint": "tslint --project . --type-check src/**/*.ts",
     "start": "node build/index.js",
-    "run": "ts-node src/index.ts",
+    "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,6 +23,7 @@
     "typescript": "^2.7.0-dev.20171111"
   },
   "devDependencies": {
+    "trash-cli": "^1.4.0",
     "ts-node": "^3.3.0"
   }
 }
