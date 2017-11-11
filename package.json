@@ -4,7 +4,10 @@
   "description": "Node project scaffold",
   "main": "index.js",
   "scripts": {
+    "build": "trash build && tsc -p tsconfig.json",
     "lint": "tslint --project . --type-check src/**/*.ts",
+    "start": "node build/index.js",
+    "run": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,8 +17,12 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^8.0.51",
+    "chalk": "^2.3.0",
     "trash": "^4.1.0",
     "tslint": "^5.0.0-dev.0",
     "typescript": "^2.7.0-dev.20171111"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0"
   }
 }
