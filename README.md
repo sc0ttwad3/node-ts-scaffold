@@ -1,6 +1,7 @@
+<img src="https://nodejs.org/static/images/logo.svg">
 <img height="0" width="0" alt="Typescript Starter Dark" src="https://cloud.githubusercontent.com/assets/904007/23006840/4e2b0c6c-f3d2-11e6-8f32-11384ee0cc4b.png"><img alt="typescript-starter" src="https://cloud.githubusercontent.com/assets/904007/23006836/4c67a3b8-f3d2-11e6-8784-12f0a34284d1.png">
 
-# typescript-starter
+# node-ts-scaffold
 
 A [typescript](https://www.typescriptlang.org/) starter for building node-based project and typescript libraries:
 

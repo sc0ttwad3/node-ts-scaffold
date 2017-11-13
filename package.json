@@ -1,7 +1,7 @@
 {
   "name": "node-ts-scaffold",
   "version": "0.1.0",
-  "description": "Node project scaffold",
+  "description": "A typescript starter for building node-based project and typescript libraries:",
   "main": "index.js",
   "scripts": {
     "clean": "./node_modules/.bin/trash builde",
