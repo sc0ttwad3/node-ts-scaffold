@@ -1,4 +1,4 @@
-<img src="https://nodejs.org/static/images/logo.svg">
+<img src="https://tse4.mm.bing.net/th?id=OIP.kinfImMcVjQ7kp0vqNVygwFWC2&w=273&h=160&c=7&qlt=90&o=4&dpr=2.5&pid=1.7">
 <img height="0" width="0" alt="Typescript Starter Dark" src="https://cloud.githubusercontent.com/assets/904007/23006840/4e2b0c6c-f3d2-11e6-8f32-11384ee0cc4b.png"><img alt="typescript-starter" src="https://cloud.githubusercontent.com/assets/904007/23006836/4c67a3b8-f3d2-11e6-8784-12f0a34284d1.png">
 
 # node-ts-scaffold
