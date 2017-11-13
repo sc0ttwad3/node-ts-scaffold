@@ -1,14 +1,15 @@
 {
-  "name": "ts-scaffold",
+  "name": "node-ts-scaffold",
   "version": "0.1.0",
   "description": "Node project scaffold",
   "main": "index.js",
   "scripts": {
+    "clean": "./node_modules/.bin/trash builde",
     "build": "./node_modules/.bin/trash build && tsc -p tsconfig.json",
-    "lint": "tslint --project . --type-check src/**/*.ts",
+    "lint": "tslint --project .",
     "start": "node build/index.js",
     "dev": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --forceExit"
   },
   "keywords": [
     "node"
@@ -23,7 +24,25 @@
     "typescript": "^2.7.0-dev.20171111"
   },
   "devDependencies": {
+    "@types/jest": "^21.1.6",
+    "jest": "^21.2.1",
     "trash-cli": "^1.4.0",
+    "ts-jest": "^21.2.1",
     "ts-node": "^3.3.0"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
   }
 }
