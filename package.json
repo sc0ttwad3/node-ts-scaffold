@@ -1,7 +1,7 @@
 {
   "name": "node-ts-scaffold",
   "version": "0.1.0",
-  "description": "A typescript starter for building node-based project and typescript libraries:",
+  "description": "A typescript starter for building node-based projects and typescript libraries:",
   "main": "index.js",
   "scripts": {
     "clean": "./node_modules/.bin/trash builde",
@@ -17,18 +17,18 @@
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^8.0.51",
     "chalk": "^2.3.0",
-    "trash": "^4.1.0",
-    "tslint": "^5.0.0-dev.0",
-    "typescript": "^2.7.0-dev.20171111"
+    "trash": "^4.1.0"
   },
   "devDependencies": {
     "@types/jest": "^21.1.6",
+    "@types/node": "^8.0.53",
     "jest": "^21.2.1",
     "trash-cli": "^1.4.0",
-    "ts-jest": "^21.2.1",
-    "ts-node": "^3.3.0"
+    "ts-jest": "^21.2.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.7.0-dev.20171116"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
