@@ -6,10 +6,9 @@
   "scripts": {
     "clean": "./node_modules/.bin/trash build",
     "build": "./node_modules/.bin/trash build && tsc -p tsconfig.json",
-    "lint": "tslint --project .",
+    "lint": "./node_modules/.bin/tslint --project .",
     "start": "node build/index.js",
-    "dev": "ts-node src/index.ts",
-    "test": "jest --forceExit"
+    "test": "./node_modules/.bin/jest --forceExit"
   },
   "keywords": [
     "node"
@@ -17,18 +16,17 @@
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.0",
-    "trash": "^4.1.0"
+    "chalk": "^2.3.0"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.6",
-    "@types/node": "^8.0.53",
-    "jest": "^21.2.1",
+    "@types/jest": "^22.1.0",
+    "@types/node": "^9.3.0",
+    "jest": "^22.1.4",
+    "trash": "^4.2.1",
     "trash-cli": "^1.4.0",
-    "ts-jest": "^21.2.2",
-    "ts-node": "^3.3.0",
-    "tslint": "^5.8.0",
-    "typescript": "^2.7.0-dev.20171116"
+    "ts-jest": "^22.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.0-dev.20180125"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
