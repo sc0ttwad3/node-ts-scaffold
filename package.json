@@ -4,7 +4,7 @@
   "description": "A typescript starter for building node-based projects and typescript libraries:",
   "main": "index.js",
   "scripts": {
-    "clean": "./node_modules/.bin/trash builde",
+    "clean": "./node_modules/.bin/trash build",
     "build": "./node_modules/.bin/trash build && tsc -p tsconfig.json",
     "lint": "tslint --project .",
     "start": "node build/index.js",
