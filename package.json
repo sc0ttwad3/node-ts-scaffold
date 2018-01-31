@@ -9,7 +9,8 @@
     "watch": "./node_modules/.bin/trash build && tsc -p tsconfig.json -watch",
     "lint": "./node_modules/.bin/tslint --project .",
     "start": "node build/index.js",
-    "test": "./node_modules/.bin/jest --forceExit"
+    "test": "./node_modules/.bin/jest --forceExit",
+    "cover": "./node_modules/.bin/jest --coverage --coverageDirectory=coverage"
   },
   "keywords": [
     "node"
@@ -20,14 +21,14 @@
     "chalk": "^2.3.0"
   },
   "devDependencies": {
-    "@types/jest": "^22.1.0",
-    "@types/node": "^9.3.0",
+    "@types/jest": "^22.1.1",
+    "@types/node": "^9.4.0",
     "jest": "^22.1.4",
     "trash": "^4.2.1",
     "trash-cli": "^1.4.0",
-    "ts-jest": "^22.0.1",
+    "ts-jest": "^22.0.2",
     "tslint": "^5.9.1",
-    "typescript": "^2.8.0-dev.20180125"
+    "typescript": "^2.8.0-dev.20180130"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
