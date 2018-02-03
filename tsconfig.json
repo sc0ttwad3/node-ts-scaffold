@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
     "target": "es6",
     "outDir": "build",
     "rootDir": "src",
@@ -26,7 +28,8 @@
     "src/**/*.ts"
   ],
   "exclude": [
-    "node_modules/**"
+    "node_modules/**",
+
   ],
   "compileOnSave": false
 }
