@@ -1,8 +1,8 @@
-<img src="https://tse4.mm.bing.net/th?id=OIP.kinfImMcVjQ7kp0vqNVygwFWC2&w=273&h=160&c=7&qlt=90&o=4&dpr=2.5&pid=1.7">
-
 # node-ts-scaffold
 
-A [typescript](https://www.typescriptlang.org/) starter for building node-based project and typescript libraries:
+Made with ☕️ by <a href="http://www.sc0ttwad3.com">Scott Wade</a>
+
+A [typescript](https://www.typescriptlang.org/) starter for building node-based projects and typescript libraries:
 
 ## Get started
 
