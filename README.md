@@ -13,6 +13,7 @@ This starter includes a watch task which makes development faster and more inter
 ## View test coverage
 
 To generate and view test coverage, run:
+
 ```bash
 yarn cov
 ```
