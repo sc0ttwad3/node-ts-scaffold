@@ -3,7 +3,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "target": "es6",
-    "outDir": "build",
+    "outDir": "dist",
     "rootDir": "src",
     "moduleResolution": "node",
     "module": "commonjs",
