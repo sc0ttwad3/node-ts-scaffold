@@ -4,17 +4,32 @@
   "description": "A typescript starter for building node-based projects and typescript libraries:",
   "main": "index.js",
   "scripts": {
-    "clean": "trash ./dist",
-    "build": "npm run clean && tsc -p tsconfig.json",
-    "watch": "npm run clean && tsc -p tsconfig.json -watch",
-    "lint": "tslint --project .",
-    "pretty": "pretty-quick --staged",
+    "clean:ts": "trash ./dist",
+    "clean:babel": "trash ./build",
+    "clean": "run-p clean:ts clean:babel",
+
+    "build:ts": "tsc -p tsconfig.json",
+    "watch:ts": "tsc -p tsconfig.json -watch",
+
+    "build:babel": "babel build --out-dir dist --source-maps inline",
+    "watch:babel": "babel build --out-dir dist --source-maps inline --watch",
+
+    "build": "run-s clean build:ts build:babel",
+    "watch": "run-p clean watch:ts watch:babel",
+
+    "lint:ts": "tslint --project .",
+
+    "start": "node ./dist/index.js",
+    "test": "jest --forceExit",
+    "cover": "jest --coverage --coverageDirectory=coverage",
+
+    "these-below-here-dont-work-yet": "",
     "pretty:check": "prettier --config .prettierrc --list-different src",
     "format:check": "prettier --config .prettierrc --list-different src/**/*{.ts,.js}",
-    "start": "node ./dist/index.js",
-    "test": ".jest --forceExit",
-    "cover": "jest --coverage --coverageDirectory=coverage",
-    "precommit": "run-s pretty lint"
+
+    "pre-commit-hook-stage-files-see-husky": "",
+    "pretty-quick": "pretty-quick --staged",
+    "precommit": "run-s pretty-quick"
   },
   "keywords": ["node"],
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
@@ -23,6 +38,12 @@
     "chalk": "^2.3.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-typescript": "^7.0.0-beta.40",
     "@types/jest": "^22.1.3",
     "@types/node": "^9.4.6",
     "husky": "^0.14.3",
