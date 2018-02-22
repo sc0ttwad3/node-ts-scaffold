@@ -37,6 +37,13 @@ yarn changelog
 
 ## Notes
 
+Can't currently run the following npm scripts that do work manually from the command line.
+
+```
+    "pretty:check": "prettier --config .prettierrc --list-different src",
+    "format:check": "prettier --config .prettierrc --list-different src/**/*{.ts,.js}",
+```
+
 ### Multiple builds (`main`, `module`, and `browser`)
 
 ### Dependency on `tslib`
