@@ -2,7 +2,7 @@
 
 Made with ☕️ by <a href="http://www.sc0ttwad3.com">Scott Wade</a>
 
-A [Typescript](https://www.typescriptlang.org/) based **node project scaffold** that supports both cutting-edge Typescript and the latest Javascript features and proposals possible through babel7 pipeline integration.
+A [Typescript](https://www.typescriptlang.org/)-based **node project scaffold** that supports both cutting-edge Typescript and the latest Javascript features and proposals via babel7 pipeline integration.
 
 ## Get started
 
