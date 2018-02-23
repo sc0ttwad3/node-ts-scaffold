@@ -1,4 +1,9 @@
+import {_, it} from 'param.macro';
+import chalk from 'chalk';
 
-import chalk from "chalk";
+// simple logger
+const log = (..._arg) => {
+  return console.log(chalk.grey(..._arg));
+};
 
-console.log(chalk.blue("index file start..."));
+log(chalk.blue('index file starts...'));

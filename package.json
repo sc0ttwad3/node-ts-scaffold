@@ -1,32 +1,25 @@
 {
   "name": "node-ts-scaffold",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A typescript starter for building node-based projects and typescript libraries:",
   "main": "index.js",
   "scripts": {
     "clean:ts": "trash ./dist",
     "clean:babel": "trash ./build",
     "clean": "run-p clean:ts clean:babel",
-
     "build:ts": "tsc -p tsconfig.json",
     "watch:ts": "tsc -p tsconfig.json -watch",
-
     "build:babel": "babel build --out-dir dist --source-maps inline",
     "watch:babel": "babel build --out-dir dist --source-maps inline --watch",
-
     "build": "run-s clean build:ts build:babel",
-    "watch": "run-p clean watch:ts watch:babel",
-
+    "watch": "run-s watch:ts watch:babel",
     "lint:ts": "tslint --project .",
-
     "start": "node ./dist/index.js",
     "test": "jest --forceExit",
     "cover": "jest --coverage --coverageDirectory=coverage",
-
     "these-below-here-dont-work-yet": "",
     "pretty:check": "prettier --config .prettierrc --list-different src",
     "format:check": "prettier --config .prettierrc --list-different src/**/*{.ts,.js}",
-
     "pre-commit-hook-stage-files-see-husky": "",
     "pretty-quick": "pretty-quick --staged",
     "precommit": "run-s pretty-quick"
@@ -46,9 +39,11 @@
     "@babel/preset-typescript": "^7.0.0-beta.40",
     "@types/jest": "^22.1.3",
     "@types/node": "^9.4.6",
+    "babel-plugin-macros": "^2.1.0",
     "husky": "^0.14.3",
     "jest": "^22.3.0",
     "npm-run-all": "^4.1.2",
+    "param.macro": "^2.0.0",
     "prettier": "^1.10.2",
     "pretty-quick": "^1.4.1",
     "trash": "^4.2.1",
@@ -66,5 +61,6 @@
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$",
     "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"]
-  }
+  },
+  "repository": "https://github.com/sc0ttwad3/node-ts-scaffold.git"
 }

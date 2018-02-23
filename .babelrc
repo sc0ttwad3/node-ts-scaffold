@@ -1,4 +1,7 @@
 {
   "presets": ["@babel/preset-env"],
-  "plugins": ["@babel/plugin-proposal-pipeline-operator"]
+  "plugins": [
+    "@babel/plugin-proposal-pipeline-operator",
+    "babel-plugin-macros"
+  ]
 }
