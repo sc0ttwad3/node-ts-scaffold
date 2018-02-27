@@ -4,8 +4,8 @@
   "description": "A Typescript-based node project scaffold ",
   "main": "index.js",
   "scripts": {
-    "clean:ts": "trash ./dist",
-    "clean:babel": "trash ./build",
+    "clean:ts": "rimraf ./dist",
+    "clean:babel": "rimraf ./build",
     "clean": "run-p clean:ts clean:babel",
     "build:ts": "tsc -p tsconfig.json",
     "watch:ts": "tsc -p tsconfig.json -watch",
@@ -17,9 +17,8 @@
     "start": "node ./dist/index.js",
     "test": "jest --forceExit",
     "cover": "jest --coverage --coverageDirectory=coverage",
-    "these-below-here-dont-work-yet": "",
-    "pretty:check": "prettier --config .prettierrc --list-different src",
-    "format:check": "prettier --config .prettierrc --list-different src/**/*{.ts,.js}",
+    "pretty:check": "prettier --config .prettierrc --list-different ./src/**/*.ts",
+    "format:check": "prettier --config .prettierrc --list-different ./src/**/*.ts",
     "pre-commit-hook-stage-files-see-husky": "",
     "pretty-quick": "pretty-quick --staged",
     "precommit": "run-s pretty-quick"
@@ -28,7 +27,8 @@
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.1"
+    "chalk": "^2.3.1",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
@@ -51,7 +51,7 @@
     "ts-jest": "^22.0.4",
     "tslib": "^1.9.0",
     "tslint": "^5.9.1",
-    "typescript": "^2.8.0-dev.20180217"
+    "typescript": "^2.8.0-dev.20180222"
   },
   "jest": {
     "coverageDirectory": "./coverage/",

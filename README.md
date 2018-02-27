@@ -18,6 +18,8 @@ Typescript source files begin in `/src` which are compiled into **es6** and plac
 
 This starter includes a watch task which makes development faster and more interactive.
 
+[See babel macros capabilities](https://github.com/citycide/param.macro#babelrcjs-babel-v7)
+
 ```
 // Not Working Currently
 $ yarn watch
