@@ -18,9 +18,9 @@
     "test": "jest --forceExit",
     "cover": "jest --coverage --coverageDirectory=coverage",
     "pre-commit-hook-stage-files-see-husky": "",
-    "pretty:check": "prettier --config .prettierrc --list-different ./src/**/*.ts",
+    "pretty:check": "prettier --config .prettierrc --list-different \"./src/**/*.ts\"",
     "pretty-quick": "pretty-quick --staged",
-    "precommit": "run-s pretty-quick",
+    "precommit": "run-s pretty:check pretty-quick",
     "debug": "node --nolazy --inspect-brk=9229 ./src/index.ts",
     "debug:firefox": "./open_debugger.cmd"
   },
