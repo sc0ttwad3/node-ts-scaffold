@@ -20,7 +20,9 @@
     "pre-commit-hook-stage-files-see-husky": "",
     "pretty:check": "prettier --config .prettierrc --list-different ./src/**/*.ts",
     "pretty-quick": "pretty-quick --staged",
-    "precommit": "run-s pretty-quick"
+    "precommit": "run-s pretty-quick",
+    "debug": "node --nolazy --inspect-brk=9229 ./src/index.ts",
+    "debug:firefox": "./open_debugger.cmd"
   },
   "keywords": ["node"],
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
@@ -50,7 +52,7 @@
     "ts-jest": "^22.0.4",
     "tslib": "^1.9.0",
     "tslint": "^5.9.1",
-    "typescript": "^2.8.0-dev.20180222"
+    "typescript": "^2.9.0-dev.20180324"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
