@@ -6,4 +6,4 @@ const log = (..._arg) => {
   return console.log(chalk.grey(..._arg));
 };
 
-log(chalk.blue('index file starts...'));
+log(chalk.blue('main index file starts...'));
