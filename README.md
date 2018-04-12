@@ -53,6 +53,7 @@ $ yarn changelog
 ## Notes
 
 Can't currently run the following npm scripts that do work manually from the command line.
+This is an issue with command line args and node.
 
 ```
 "pretty:check": "prettier --config .prettierrc --list-different src",
