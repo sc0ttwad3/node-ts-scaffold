@@ -7,3 +7,4 @@ const log = (..._arg) => {
 };
 
 log(chalk.blue('main index file starts...'));
+log(chalk.blue('from transpiled TypeScript 3.x code into es6.'));
